@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Dosis:wght@300&display=swap"
+        rel="stylesheet">
+    <title>_nology Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <br>
+    <br>
+    <div>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum sit amet nisi
+            tincidunt interdum. Praesent at fermentum nisi. Fusce ac metus pharetra elit tristique ullamcorper non non
+            nisl.</p>
+    </div>
+    <br>
+    <div>
+        <form id="survey-form">
+            <div class="box">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="box">
+                <label id="email-label" for="text">Email</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="box">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="18" max="35" class="form-control" placeholder="Age" />
+            </div>
+            <div class="box">
+                <p>Which option best describes your path choice?</p>
+                <select id="dropdown" name="pathway" class="form-control" required>
+                    <option disabled selected value>Select preferred choice</option>
+                    <option value="student">WordPress Developer</option>
+                    <option value="job">Front End Developer</option>
+                    <option value="learner">Full Stack Developer</option>
+                    <option value="preferNo">Software Engineer</option>
+                    <option value="other">Not Sure</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <p>Would you recommend _nology to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="Absolutely" type="radio" class="input-radio"
+                        checked />Absolutely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+            </div>
+
+            <div class="box">
+                <p>
+                    What is your favorite feature of _nology?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="curriculum">Curriculum</option>
+                    <option value="projects">Projects</option>
+                    <option value="peerlearning">Peer Learning</option>
+                    <option value="jobguarantee">Job Guarantee</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <p>
+                    What are you looking forward to at _nology?
+                    <span class="clue">(Select all that apply)</span>
+                </p>
+
+                <label><input name="prefer" value="front-end-projects" type="checkbox"
+                        class="input-checkbox" />Front-end Projects</label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end
+                    Projects</label>
+                <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Data
+                    Science</label>
+                <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Coding &
+                    Algorithms Challenges</label>
+                <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Bonus
+                    Courses</label>
+            </div>
+
+            <div class="box">
+                <p>Tell us how we can best improve...comment below</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="box">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
